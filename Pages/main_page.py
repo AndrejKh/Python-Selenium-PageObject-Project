@@ -3,6 +3,8 @@ from selenium import webdriver
 from .login_page import LoginPage
 from Pages.base_page import BasePage
 from Pages.locators import MainPageLocators
+import pytest
+
 
 class MainPage(BasePage):
     def go_to_login_page(self):
@@ -26,4 +28,5 @@ class MainPage(BasePage):
         self.browser.get(self.link)
         page.open()
         page.should_be_login_link()
+
 
