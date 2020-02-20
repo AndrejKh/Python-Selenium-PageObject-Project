@@ -3,11 +3,17 @@ from selenium import webdriver
 import math
 from selenium.common.exceptions import NoAlertPresentException
 import pytest
-
+browser = webdriver.Chrome
 
 class LoginPage(BasePage):
-    def __init__(self):
-        self.browser = webdriver.Chrome()
+    def should_be_login_page(self, browser):
+        login_page = "http://selenium1py.pythonanywhere.com/en-gb/accounts/login/"
+        browser.get(login_page)
+        assert login_page
+
+    def should_be_login_form(self):
+        login_form = self.browser.find_element_by_css_selector("form#login_form.well"), "Can't find any login form"
+        assert login_form
 
     def test_guest_can_go_to_page(self, browser, link):
         browser.get(link)
