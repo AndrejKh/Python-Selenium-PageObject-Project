@@ -7,6 +7,11 @@ class MainPageLocators():
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "form#login_form.well")
     REGITSER = (By.CSS_SELECTOR, "form#register_form.well")
+    INPUT_EMAIL = (By.CSS_SELECTOR, "input#id_registration-email.form-control")
+    INPUT_PASSWORD = (By.CSS_SELECTOR, "input#id_registration-password1.form-control")
+    CONFIRM_PASSWORD = (By.CSS_SELECTOR, "input#id_registration-password2.form-control")
+    REGISTER_BUTTON = (By.CSS_SELECTOR, 'button[name="registration_submit"]')
+
 
 class PageObjectLocators():
     CLICK_THE_BUTTON = (By.CSS_SELECTOR, "button.btn.btn-lg.btn-primary.btn-add-to-basket") 
@@ -22,5 +27,5 @@ class BasePageLocators():
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     CLICK_ON_BASKET = (By.CSS_SELECTOR, "div.basket-mini.pull-right.hidden-xs > span > a")
     EMPTY_BASKET = (By.XPATH, "//p[contains(text(), 'empty')]")
-
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 

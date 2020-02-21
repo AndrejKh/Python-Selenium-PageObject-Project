@@ -87,3 +87,20 @@ def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
     page.guest_can_see_the_status_message()
 
 
+class TestUserAddToBasketFromProductPage:
+    def test_user_cant_see_success_message(self, browser):
+        link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
+        page = LoginPage(browser, link)
+        page.open()
+        time.sleep(2)
+        page.register_new_user(browser)
+
+    def test_user_can_add_product_to_basket(self, browser):
+        link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
+        page = LoginPage(browser, link)
+        page.open()
+        login_page = LoginPage(browser, link)
+        login_page.is_element_present(browser)
+
+
+
