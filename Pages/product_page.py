@@ -1,15 +1,7 @@
-import pytest
-from selenium.webdriver.common.by import By
 from Pages.base_page import BasePage
-from Pages.login_page import LoginPage
-from selenium import webdriver
 from selenium.common.exceptions import NoAlertPresentException
 from Pages.locators import PageObjectLocators
 import math
-import time
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
 from Pages.locators import ProductPageLocators
 
 

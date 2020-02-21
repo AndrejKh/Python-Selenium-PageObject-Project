@@ -1,9 +1,5 @@
-from selenium.webdriver.common.by import By
-from selenium import webdriver
-from .login_page import LoginPage
 from Pages.base_page import BasePage
 from Pages.locators import MainPageLocators
-import pytest
 
 
 class MainPage(BasePage):
