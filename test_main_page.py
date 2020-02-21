@@ -1,9 +1,7 @@
-from Pages.main_page import MainPage
 from Pages.login_page import LoginPage
-from Pages.product_page import ProductPage
 from Pages.base_page import BasePage
 from Pages.main_page import MainPage
-import pytest
+
 
 
 def test_guest_can_add_product_to_basket(browser):
