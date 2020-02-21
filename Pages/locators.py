@@ -11,7 +11,7 @@ class LoginPageLocators():
     INPUT_PASSWORD = (By.CSS_SELECTOR, "input#id_registration-password1.form-control")
     CONFIRM_PASSWORD = (By.CSS_SELECTOR, "input#id_registration-password2.form-control")
     REGISTER_BUTTON = (By.CSS_SELECTOR, 'button[name="registration_submit"]')
-
+    CLICK_LOGIN = (By.CSS_SELECTOR,"a#login_link") 
 
 class PageObjectLocators():
     CLICK_THE_BUTTON = (By.CSS_SELECTOR, "button.btn.btn-lg.btn-primary.btn-add-to-basket") 
